@@ -32,8 +32,8 @@ class MainActivity : AppCompatActivity() {
     }
     fun setButtomNav(){
         fm.beginTransaction().add(R.id.host, fragment_home).show(fragment_home).commit()
-        fm.beginTransaction().add(R.id.host, fragment_cart).show(fragment_cart).commit()
-        fm.beginTransaction().add(R.id.host, fragment_transaksi).show(fragment_transaksi).commit()
+        fm.beginTransaction().add(R.id.host, fragment_cart).hide(fragment_cart).commit()
+        fm.beginTransaction().add(R.id.host, fragment_transaksi).hide(fragment_transaksi).commit()
 
         bottomNavigationView = findViewById(R.id.nav_view)
         menu = bottomNavigationView.menu
