@@ -29,7 +29,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setButtomNav()
 
-
     }
     fun setButtomNav(){
         fm.beginTransaction().add(R.id.host, fragment_home).show(fragment_home).commit()
@@ -57,6 +56,7 @@ class MainActivity : AppCompatActivity() {
             false
         }
     }
+    //memangil fungsi fragmen
     fun callFragment(int: Int, fragment: Fragment){
         menuItem = menu.getItem(int)
         menuItem.isChecked = true

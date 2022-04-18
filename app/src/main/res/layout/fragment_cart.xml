@@ -3,16 +3,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="cart"
-        android:id="@+id/tx_home"
-        android:textSize="50sp"
-        android:textAlignment="center"
-        android:gravity="center"
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="cart"-->
+<!--        android:id="@+id/tx_home"-->
+<!--        android:textSize="50sp"-->
+<!--        android:textAlignment="center"-->
+<!--        android:gravity="center"-->
 
-        />
+<!--        />-->
 
 
 
