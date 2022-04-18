@@ -4,13 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/ic_bulet_ijo">
+    tools:context=".MainActivity">
 
     <FrameLayout
         android:id="@+id/host"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_above="@+id/nav_view"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
