@@ -1,4 +1,7 @@
 package com.example.toko_keramik_online.model
 
-class kategori {
+import java.io.Serializable
+
+class Kategori: Serializable{
+    lateinit var kategori_m:String
 }

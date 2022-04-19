@@ -11,8 +11,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager.widget.ViewPager
 import com.example.toko_keramik_online.R
+import com.example.toko_keramik_online.adapter.AdapterKategori
 import com.example.toko_keramik_online.adapter.AdapterProduk
 import com.example.toko_keramik_online.adapter.AdapterSlider
+import com.example.toko_keramik_online.model.Kategori
 import com.example.toko_keramik_online.model.Produk
 
 // TODO: Rename parameter arguments, choose names that match
@@ -29,10 +31,7 @@ class HomeFragment : Fragment() {
 
     lateinit var vvSlider: ViewPager
     lateinit var rvProduk:RecyclerView
-
-
-
-
+    lateinit var rvKategori: RecyclerView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -42,6 +41,7 @@ class HomeFragment : Fragment() {
 
         vvSlider = view.findViewById(R.id.v_slider)
         rvProduk = view.findViewById(R.id.rv_produk)
+        rvKategori = view.findViewById(R.id.rv_kategori)
 
 
         val arrSlider = ArrayList<Int>()
@@ -52,12 +52,19 @@ class HomeFragment : Fragment() {
         val adapterSlider = AdapterSlider(arrSlider, activity)
         vvSlider.adapter = adapterSlider
 
+        val layoutManager = LinearLayoutManager(activity)
+        layoutManager.orientation = LinearLayoutManager.HORIZONTAL
+        rvKategori.adapter = AdapterKategori(arrKategori)
+        rvKategori.layoutManager = layoutManager
+
 
 
         GridLayoutManager(view.context,2,RecyclerView.VERTICAL,false).apply {
             rvProduk.layoutManager=this
         }
         rvProduk.adapter=AdapterProduk(arrPrduk)
+
+
 
 
 
@@ -91,6 +98,21 @@ class HomeFragment : Fragment() {
         return arr
 
     }
+
+    val arrKategori : ArrayList<Kategori>get(){
+        val arr2 = ArrayList<Kategori>()
+        val p1= Kategori()
+        p1.kategori_m = "keramik dinding"
+
+        val p2= Kategori()
+        p2.kategori_m = "keramik dinding"
+
+        arr2.add(p1)
+        arr2.add(p2)
+
+        return  arr2
+    }
+
 
 
 
