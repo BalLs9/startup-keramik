@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/ic_bulet_ijo"
-    tools:context=".activity.LoginActivity">
+    tools:context=".activity.RegisterActivity">
 
     <ImageView
         android:layout_width="140dp"
@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="Login"
+        android:text="Register"
         android:textSize="19sp"
         android:textStyle="bold"
         android:textColor="#3F414E"
@@ -82,7 +82,7 @@
     <ImageButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/ic_masuk_ijo"
+        android:background="@drawable/ic_daftar_ijo"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         />
@@ -112,13 +112,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Belum Punya Akun ?"
+            android:text="Sudah Punya Akun ?"
             android:layout_marginRight="5dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Daftar"
+            android:text="Masuk"
             android:textColor="@color/orange"/>
 
     </LinearLayout>
