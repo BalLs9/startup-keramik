@@ -74,26 +74,33 @@ class HomeFragment : Fragment() {
     val arrPrduk : ArrayList<Produk>get(){
         val arr = ArrayList<Produk>()
         val p1= Produk()
-        p1.nama = "keramik dinding"
+        p1.nama = "Keramik Asia 40x40 Istanbul Cream kw C"
         p1.harga = "Rp.0"
-        p1.ukuran = "20 x 30 cm"
-        p1.gambar = R.drawable.produk
+        p1.ukuran = "40 x 40 cm"
+        p1.gambar = R.drawable.keramik_asia
 
         val p2= Produk()
-        p2.nama = "keramik dinding"
+        p2.nama = "keramik Dindin Uno Amore Brown 25 x 40"
         p2.harga = "Rp.0"
         p2.ukuran = "20 x 30 cm"
-        p2.gambar = R.drawable.produk
+        p2.gambar = R.drawable.uno_amore
 
         val p3= Produk()
-        p3.nama = "keramik dinding"
+        p3.nama = "Keramik Dinding 25x40 Platinum Bulgary Grey Embossed kw C"
         p3.harga = "Rp.0"
         p3.ukuran = "20 x 30 cm"
-        p3.gambar = R.drawable.produk
+        p3.gambar = R.drawable.bulgary
+
+        val p4= Produk()
+        p4.nama = "Keramik Lantai Asia Alpha Brown 25x25 kw C"
+        p4.harga = "Rp.0"
+        p4.ukuran = "20 x 30 cm"
+        p4.gambar = R.drawable.asia_brown
 
         arr.add(p1)
         arr.add(p2)
         arr.add(p3)
+        arr.add(p4)
 
         return arr
 
